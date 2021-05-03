@@ -1,12 +1,13 @@
+#PURPOSE: Generates the simulations and performs SuMO-Fil on simulations with approximately 5k features each
 
-#---Small Signal-----
-source('C:/Users/lorin/Desktop/UB Masters project/function_setpar.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_calsigma.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_genobs.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_genlat.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_gen_eff_obs_V2.R')
-source('C:/Users/lorin/Desktop/UB Masters project/Pathway Analysis.R')
-source('C:/Users/lorin/Desktop/UB Masters project/Final Simulations.R')
+#---Weak Signal-----#
+source('./function_setpar.R')
+source('./function_calsigma.R')
+source('./function_genobs.R')
+source('./function_genlat.R')
+source('./function_gen_eff_obs_V2.R')
+source('./Pathway Analysis.R')
+source('./Final Simulations.R')
 finalSims(
   alpha= 0.35
   ,Rsq= 0.35
@@ -23,22 +24,22 @@ finalSims(
   ,noiseSD= 0.5
   ,numClusters_1= 3
   ,numClusters_2= 3
-  ,startSim=398
+  ,startSim=1
   ,numSims= 500
-  ,outLoc='E:/UB Masters Project/Simulation Results/lowSig_500sims_05k/out_files'
+  ,outLoc='FILE PATH TO SAVE OUTPUTS'
 )
 
 
 
 
-#---Medium Signal-----
-source('C:/Users/lorin/Desktop/UB Masters project/function_setpar.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_calsigma.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_genobs.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_genlat.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_gen_eff_obs_V2.R')
-source('C:/Users/lorin/Desktop/UB Masters project/Pathway Analysis.R')
-source('C:/Users/lorin/Desktop/UB Masters project/Final Simulations.R')
+#---Moderate Signal-----#
+source('./function_setpar.R')
+source('./function_calsigma.R')
+source('./function_genobs.R')
+source('./function_genlat.R')
+source('./function_gen_eff_obs_V2.R')
+source('./Pathway Analysis.R')
+source('./Final Simulations.R')
 finalSims(
   alpha= 0.35
   ,Rsq= 0.85
@@ -55,21 +56,21 @@ finalSims(
   ,noiseSD= 1
   ,numClusters_1= 3
   ,numClusters_2= 3
-  ,startSim = 197
+  ,startSim = 1
   ,numSims= 500
-  ,outLoc='E:/UB Masters Project/Simulation Results/medSig_500sims_05k/out_files'
+  ,outLoc='FILE PATH TO SAVE OUTPUTS'
 )
 
 
 
-#---High Signal-----
-source('C:/Users/lorin/Desktop/UB Masters project/function_setpar.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_calsigma.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_genobs.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_genlat.R')
-source('C:/Users/lorin/Desktop/UB Masters project/function_gen_eff_obs_V2.R')
-source('C:/Users/lorin/Desktop/UB Masters project/Pathway Analysis.R')
-source('C:/Users/lorin/Desktop/UB Masters project/Final Simulations.R')
+#---Strong Signal-----#
+source('./function_setpar.R')
+source('./function_calsigma.R')
+source('./function_genobs.R')
+source('./function_genlat.R')
+source('./function_gen_eff_obs_V2.R')
+source('./Pathway Analysis.R')
+source('./Final Simulations.R')
 finalSims(
   alpha= 0.35
   ,Rsq= 0.85
@@ -86,7 +87,7 @@ finalSims(
   ,noiseSD= 2
   ,numClusters_1= 3
   ,numClusters_2= 3
-  ,startSim = 220
+  ,startSim = 1
   ,numSims= 500
-  ,outLoc='E:/UB Masters Project/Simulation Results/highSig_500sims_05k/out_files'
+  ,outLoc='FILE PATH TO SAVE OUTPUTS'
 )
